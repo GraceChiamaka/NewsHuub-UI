@@ -2,7 +2,7 @@
 
 This project is a simple News Collection app made to provide a user with the ability to select their preffered news sources.
 
-# Design by - [Eirik Eriksen](https://www.behance.net/Lukeriksen)
+### Design by - [Eirik Eriksen](https://www.behance.net/Lukeriksen)
 
 # Getting Started with Create React App
 
