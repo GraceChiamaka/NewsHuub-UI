@@ -22,12 +22,11 @@
 		"one-var-declaration-per-line": 0,
 		"new-cap": 0,
 		"consistent-return": 0,
-		"arrow-parens": [
-			"error",
-			"as-needed"
-		],
+		"arrow-parens": "warn",
+		"arrow-body-style": "warn",
 		"no-param-reassign": 0,
 		"comma-dangle": 0,
+		"no-nested-ternary": "warn",
 		"curly": [
 			"error",
 			"multi-line"
@@ -45,10 +44,6 @@
 			}
 		],
 		"react/react-in-jsx-scope": "off",
-		"arrow-body-style": [
-			"error",
-			"as-needed"
-		],
 		"indent": [
 			"off",
 			4
@@ -60,6 +55,7 @@
 		"react/jsx-indent-props": [
 			"off"
 		],
+		"no-use-before-define": "off",
 		"react/jsx-filename-extension": [
 			"warn",
 			{
