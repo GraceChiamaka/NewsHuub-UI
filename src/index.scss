@@ -1,11 +1,21 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import './assets/scss/base';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-  html,body {
-  font-family: "Josefin Sans", sans-serif;
- background: #fff;
- font-size: 15px;
+html,
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background: #fff;
+    font-size: 15px;
+    //  border: 2px solid #000;
+    border-radius: 4px;
+    min-height: 100vh;
 }
 
+.layout-2 {
+    background: #eae9e5;
+    border: 6px solid;
+    border-radius: 6px;
+}

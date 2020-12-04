@@ -1,0 +1,87 @@
+.homepage-container {
+    .homepage-bg {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../../../assets/images/place.jpg');
+        position: absolute;
+        padding: 2rem;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        // border: 8px solid;
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            border: 8px solid;
+        }
+        .page-content {
+            margin-top: 70px;
+            .front-page {
+                .timestamp {
+                    color: #fff;
+                    font-size: 15px;
+                    font-style: italic;
+                }
+                .front-page-heading {
+                    font-size: 86px;
+                    color: #fff;
+                    line-height: 90px;
+                    font-weight: bold;
+                }
+                .front-page-description {
+                    color: #fff;
+                    font-size: 18px;
+                }
+                .credits {
+                    margin-top: 3rem;
+                    p {
+                        color: #fff;
+                        font-size: 16px;
+                        margin-bottom: 0;
+                        em {
+                            font-style: 11px;
+                        }
+                    }
+                }
+            }
+        }
+        .page-nav {
+            text-orientation: mixed;
+            writing-mode: lr-tb;
+            text-align: center;
+            p,
+            h3 {
+                margin-bottom: 0;
+                color: #fff;
+                font-weight: 600;
+            }
+            p {
+                color: #f2f2f2;
+            }
+        }
+        .page-nav.left {
+            transform: rotate(-90deg);
+            color: #fff;
+        }
+        .page-nav.next {
+            transform: rotate(90deg);
+        }
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+.border {
+    border: 1px solid;
+}
