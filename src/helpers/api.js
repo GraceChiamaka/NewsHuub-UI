@@ -28,7 +28,6 @@ export const makeApiCall = (axiosConfigObj) => {
                     : request
                     ? 'Network error, please try again later'
                     : message;
-                console.log(error, '===');
                 return reject(error);
             });
     });
@@ -42,6 +41,20 @@ export const allNewsSource = () => {
                 method: 'get',
             });
             return resolve(sourcesList);
+        } catch (error) {
+            return reject(error);
+        }
+    });
+};
+
+export const allHeadlines = () => {
+    return new Promise((resolve, reject) => {
+        try {
+            const headlines = makeApiCall({
+                url: `/top-headlines?country=us&apiKey=${apiKey}`,
+                method: 'get',
+            });
+            return resolve(headlines);
         } catch (error) {
             return reject(error);
         }

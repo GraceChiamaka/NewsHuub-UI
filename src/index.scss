@@ -1,3 +1,4 @@
+@import './assets/scss/base';
 * {
     margin: 0;
     padding: 0;
@@ -15,5 +16,6 @@ body {
 
 .layout-2 {
     background: #eae9e5;
-    padding-top: 2rem;
+    border: 6px solid;
+    border-radius: 6px;
 }

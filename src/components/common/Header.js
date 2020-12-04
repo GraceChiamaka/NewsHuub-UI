@@ -74,10 +74,8 @@ const Header = ({ className }) => {
 };
 
 export default styled(Header)`
-    z-index: 100;
-    position: absolute;
     width: 100%;
-    left: 0;
+
     nav {
         display: flex;
         align-items: center;

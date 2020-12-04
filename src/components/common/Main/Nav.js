@@ -76,7 +76,7 @@ const Nav = ({ className }) => {
 
 export default styled(Nav)`
     background: transparent;
-    position: absolute;
+
     width: 100%;
     z-index: 1000;
     .nav-brand {

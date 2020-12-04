@@ -23,7 +23,6 @@
 		"new-cap": 0,
 		"consistent-return": 0,
 		"arrow-parens": "warn",
-		"arrow-body-style": "warn",
 		"no-param-reassign": 0,
 		"comma-dangle": 0,
 		"no-nested-ternary": "warn",
@@ -31,8 +30,13 @@
 			"error",
 			"multi-line"
 		],
+		"object-curly-newline": "off",
+		"arrow-body-style": "off",
 		"no-console": "warn",
 		"no-unused-vars": "warn",
+		"import/prefer-default-export": "warn",
+		"function-paren-newline": "warn",
+		"implicit-arrow-linebreak": "warn",
 		"no-shadow": [
 			"error",
 			{
@@ -72,7 +76,7 @@
 				"tabWidth": 4,
 				"semi": true,
 				"singleQuote": true,
-				"endOfLine": "crlf"
+				"endOfLine": "auto"
 			}
 		]
 	}
