@@ -37,6 +37,7 @@
 		"import/prefer-default-export": "warn",
 		"function-paren-newline": "warn",
 		"implicit-arrow-linebreak": "warn",
+		"linebreak-style": 0,
 		"no-shadow": [
 			"error",
 			{

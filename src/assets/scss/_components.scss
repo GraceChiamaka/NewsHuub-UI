@@ -1,0 +1,131 @@
+.load-more-btn {
+    margin: 2rem 0;
+    padding: 0.5rem 2rem;
+    background: $brown-1;
+    border: 2px solid $blue;
+    height: 48px;
+    color: $blue;
+}
+
+.story-container {
+    // display: grid;
+    columns: 2 250px;
+    column-gap: 0.5rem;
+    .story-columns:nth-child(1) {
+        height: 400px;
+        .story-card {
+            margin-bottom: 0.5rem;
+            height: 200px;
+            .overlay {
+                height: 200px;
+            }
+            .story-img {
+                height: 200px;
+            }
+        }
+        .news-source-card {
+            margin-bottom: 0.5rem;
+        }
+    }
+    .story-columns:nth-child(2) {
+        height: 400px;
+        .story-card {
+            height: 400px;
+            margin-bottom: 0rem;
+            .story-img {
+                height: inherit;
+            }
+            .overlay {
+                height: 400px;
+            }
+        }
+    }
+    .news-source-card {
+        height: 200px;
+        background: $blue;
+        position: relative;
+        .overlay {
+            width: 100%;
+            height: 200px;
+            background: rgba($color: #000, $alpha: 0.5);
+            z-index: 10;
+            position: absolute;
+        }
+        .story-desc {
+            color: $brown-1;
+            padding: 0.5rem 1rem;
+            z-index: 100;
+            position: absolute;
+        }
+    }
+    .news-source-card:nth-child(2) {
+        margin-bottom: 0;
+    }
+}
+
+// scroll bar
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $brown-1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $blue;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $blue;
+}
+
+// ripple effect
+
+@-webkit-keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+@keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+.ripple__out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+.ripple__out:before {
+    content: '';
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.ripple__out:hover:before,
+.ripple__out:focus:before,
+.ripple__out:active:before {
+    -webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out;
+    border: $blue solid 6px;
+}
