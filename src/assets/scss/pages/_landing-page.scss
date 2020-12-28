@@ -1,0 +1,103 @@
+.story-card {
+    margin-bottom: 3rem;
+    position: relative;
+
+    .overlay {
+        width: 100%;
+        height: 200px;
+        background: rgba($color: #000, $alpha: 0.5);
+        z-index: 10;
+        position: absolute;
+    }
+    .story-img {
+        width: 100%;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 2rem;
+    }
+    .story-desc {
+        padding-left: 2rem;
+        z-index: 100;
+        position: absolute;
+        bottom: 1rem;
+        p {
+            color: #fff;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 28px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+        .desc {
+            min-height: 50px;
+        }
+    }
+}
+
+.ant-popover.headlines-details {
+    width: 400px;
+
+    .ant-popover-inner-content {
+        background: #eae9e5;
+        max-height: 200px;
+        overflow-y: auto;
+        padding: 0;
+        // border: 4px solid $dark-brown;
+        .content {
+            padding: 0.8rem 1rem;
+        }
+    }
+    .heading {
+        background: rgba($color: $blue, $alpha: 0.5);
+        padding: 0.8rem 1rem;
+        h3 {
+            color: $black;
+            font-weight: 600;
+        }
+    }
+
+    .story-btn {
+        font-weight: 300;
+        display: inline-block;
+        cursor: pointer;
+        background: $brown-1;
+        border: 1px solid $blue;
+        color: $blue;
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+.story-container {
+    // display: grid;
+    columns: 2 250px;
+    column-gap: 0.5rem;
+    .story-columns:nth-child(1) {
+        height: 400px;
+        .story-card {
+            margin-bottom: 0.5rem;
+            height: 200px;
+            .overlay {
+                height: 200px;
+            }
+            .story-img {
+                height: 200px;
+            }
+        }
+    }
+    .story-columns:nth-child(2) {
+        height: 400px;
+        .story-card {
+            height: 400px;
+            margin-bottom: 0rem;
+            .story-img {
+                height: inherit;
+            }
+            .overlay {
+                height: 400px;
+            }
+        }
+    }
+}
